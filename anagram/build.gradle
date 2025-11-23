@@ -1,11 +1,11 @@
 version = "0.0.1"
 
 dependencies {
-    testCompile "org.spockframework:spock-core:$spockVersion"
-    compile "org.spockframework:spock-core:$spockVersion"
+    testImplementation "org.spockframework:spock-core:$spockVersion"
+    implementation "org.spockframework:spock-core:$spockVersion"
 
-    compile "org.slf4j:slf4j-api:$slf4jVersion"
-    compile "ch.qos.logback:logback-classic:$logbackVersion"
-    compile "ch.qos.logback:logback-core:$logbackVersion"
-    compile "com.google.guava:guava:$guavaVersion"
+    implementation "org.slf4j:slf4j-api:$slf4jVersion"
+    implementation "ch.qos.logback:logback-classic:$logbackVersion"
+    implementation "ch.qos.logback:logback-core:$logbackVersion"
+    implementation "com.google.guava:guava:$guavaVersion"
 }

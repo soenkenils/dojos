@@ -1,18 +1,16 @@
 ext {
-    logbackVersion = "1.2.3"
-    slf4jVersion = "1.7.5"
-    guavaVersion = "23.5-jre"
-    junitVersion = "4.12"
-    groovyVersion = "2.5.0"
-    spockVersion = "1.1-groovy-2.4"
+    logbackVersion = "1.5.12"
+    slf4jVersion = "2.0.16"
+    guavaVersion = "33.3.1-jre"
+    junitVersion = "5.11.3"
+    groovyVersion = "4.0.23"
+    spockVersion = "2.3-groovy-4.0"
 }
 
 subprojects {
     repositories {
         mavenLocal()
-        maven {
-            url "http://repo1.maven.org/maven2/"
-        }
+        mavenCentral()
     }
 
     apply plugin: "java"
@@ -21,5 +19,5 @@ subprojects {
 }
 
 wrapper {
-    gradleVersion = '4.10.2'
+    gradleVersion = '9.1'
 }
