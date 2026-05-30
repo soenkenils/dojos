@@ -2,8 +2,6 @@ plugins {
     id "org.jetbrains.kotlin.jvm" version "2.2.0"
 }
 
-ext.kotlin_version = '2.2.0'
-
 kotlin {
     jvmToolchain(21)
 }
